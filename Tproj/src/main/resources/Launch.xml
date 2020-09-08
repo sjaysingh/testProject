@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Database Testing Demo">
+	<test name="Database Testing Suite" preserve-order="true">
+		<classes>
+			<class name="main.java.com.stryker.NV.driver.SfdcDriver">
+				<methods>
+					
+					<include name="PreIntake_Sample"/>
+					<include name="PreIntake_Approval"/>
+					<include name="Compliance_Form"/>
+					<include name="RAQAForm"/>
+					<include name="Finance_Form"/>
+					<include name="Form_Approvals"/>
+					
+					<!-- <include name="IC_HUB_DueDiligence_ApproveWithRemediation_139070"/> -->
+					<!-- <include name="IC_HUB_Search_Existing_IC_Initiate_Contract_Termination_138941"/> -->
+					<!-- <include name="GXICM_E2E_Support_Case_Change_Owner_And_Approve_138966"/>
+					<include name="IC_HUB_Search_existing_IC_initiate_Non_Renewal_138942"/>	
+					<include name="GXICM_E2E_Support_Case_Change_Owner_And_Reject_138967"/>
+					<include name="IC_HUB_Create_New_Account_Using_Pre_Intake_MasterForm_139986"/> -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
